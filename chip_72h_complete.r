@@ -31,7 +31,7 @@ anno_mm10 <- toGRanges(txdb, format="GTF", feature="gene")
 anno_mm10_biotype <- toGRanges(txdb, format="GTF", feature="gene", colNames="gene_biotype")
 
 # load Enhancer DB 
-Enhancers_blood <- read_delim("species_enh_bed/mm10_lifted.bed", delim = "\t", col_names = FALSE)
+Enhancers_blood <- read_delim("databases/mm10_lifted.bed", delim = "\t", col_names = FALSE)
 colnames(Enhancers_blood) <- c("seqnames", "start", "end", "meta") #, "score", "strand", "cell line", "tissue", "organ", "method
 # get cell origins from wacky list
 meta_lists <- Enhancers_blood$meta

@@ -60,7 +60,7 @@ cbPalette <- c( "#999999", "#56B4E9", "#009E73", "#E69F00")
 
 
 # data import
-data.folder <- "newest_data"
+data.folder <- "data"
 proteome_Th17vTreg <- read.xlsx(file.path(data.folder, "2022-143_Proteom_Th17_TReg_Bio_3Rep_relaxed-prot-inf_MaxLFQ_Intensities_UD.xlsx"), sheet = 4)
 proteome_Th17vTreg <- proteome_Th17vTreg %>% dplyr::select(-X1, -Sparklines) %>% filter(`SIGNIFICANT_BH.+.Log2.Filter` != "common")
 proteome_Th17vTreg$prot.names <-  str_remove(proteome_Th17vTreg$prot.names, "_MOUSE")

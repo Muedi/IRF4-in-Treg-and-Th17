@@ -56,7 +56,7 @@ logFC_iact = 1
 # adj.P <= 0.05
 # logFC > 0.5
 
-folder.prot <- file.path("newest_data", "time_series", "Proteom")
+folder.prot <- file.path("data", "time_series", "Proteom")
 file.prot <- "2022-144_Proteom_Idefix_MaxLFQ_Intensities_AG.xlsx"
 
 proteome_Th17vTreg_base <- read.xlsx(file.path(folder.prot, file.prot), sheet = 4)
