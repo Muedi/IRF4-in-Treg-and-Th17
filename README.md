@@ -17,3 +17,7 @@ http://health.tsinghua.edu.cn/silencerdb/
 And lift it to mm10 and put it here: databases/silencers_Mus_musculus_Blood_lifted_mm10.bed
 
 The Proteomic Input files are provided with the paper, you'll need to change the file names/locations possibly the sheet number.
+
+To cite scripts: 
+[![DOI](https://zenodo.org/badge/688444113.svg)](https://doi.org/10.5281/zenodo.14643315)
+
