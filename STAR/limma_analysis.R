@@ -19,7 +19,7 @@ names(pulldown_combi) <- make.names(pulldown_combi[2,], unique = TRUE)
 pulldown_combi <- pulldown_combi %>% filter(Protein.Group != "Protein.Group")
 pulldown_combi$prot.names <- str_remove(pulldown_combi$prot.names, "_MOUSE")
 
-pulldown_combi_base <- read.xlsx(file.path(data.folder, "2021-143_MaxLFQ_Intensities_Th17_TReg_Pulldown_together_MBR_nocrossnorm_Core4_UD.xlsx"), sheet = 2) %>%
+pulldown_combi_base <- read.xlsx(file.path("2021-143_MaxLFQ_Intensities_Th17_TReg_Pulldown_together_MBR_nocrossnorm_Core4_UD.xlsx"), sheet = 2) %>%
   select(-X1) %>%
   mutate(prot.names = str_remove(prot.names, "_MOUSE"))
 
